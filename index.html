@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML - Bootcamp Santander 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            background-color: #00796b;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #a5d6a7;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .btn-back-to-top {
+            margin-top: 20px;
+            background-color: #004d40;
+            color: white;
+            border: none;
+        }
+
+        .btn-back-to-top:hover {
+            background-color: #00796b;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        code {
+            font-size: 1.2rem;
+            background-color: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="text-center">
+        <h1>Curso de HTML - Bootcamp Santander 2025</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Curso HTML</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#aula1">Aula 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aula2">Aula 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aula3">Aula 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aula4">Aula 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seções do conteúdo -->
+    <div class="container">
+        <!-- Aula 1 -->
+        <section id="aula1" class="section">
+            <h2>Aula 1: Formatação de Texto e Estrutura Básica</h2>
+            <p><strong>&lt;h1&gt; até &lt;h6&gt;</strong>: São tags de cabeçalhos, usadas para definir títulos de
+                diferentes níveis. A tag <code>&lt;h1&gt;</code> é o título de maior destaque, e as tags subsequentes
+                <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> até <code>&lt;h6&gt;</code> vão diminuindo em tamanho e
+                importância.</p>
+            <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Título Secundário&lt;/h3&gt;</code></pre>
+
+            <p><strong>&lt;p&gt;</strong>: A tag <code>&lt;p&gt;</code> define um parágrafo de texto. É uma das tags
+                mais usadas em HTML.</p>
+            <pre><code>&lt;p&gt;Este é um parágrafo de exemplo&lt;/p&gt;</code></pre>
+
+            <p><strong>&lt;mark&gt;</strong>: Destaca o texto, geralmente usado para marcar partes do conteúdo que são
+                importantes ou foram encontradas em uma busca.</p>
+            <pre><code>&lt;mark&gt;Texto destacado&lt;/mark&gt;</code></pre>
+
+            <p><strong>&lt;small&gt;</strong>: Usado para diminuir o tamanho do texto, geralmente para citações ou
+                detalhes menores.</p>
+            <pre><code>&lt;small&gt;Texto em tamanho menor&lt;/small&gt;</code></pre>
+
+            <p><strong>&lt;i&gt;</strong>: Aplica o estilo itálico no texto, geralmente usado para ênfases.</p>
+            <pre><code>&lt;i&gt;Texto em itálico&lt;/i&gt;</code></pre>
+
+            <p><strong>&lt;u&gt;</strong>: Aplica o estilo sublinhado ao texto.</p>
+            <pre><code>&lt;u&gt;Texto sublinhado&lt;/u&gt;</code></pre>
+
+            <p><strong>&lt;strong&gt;</strong>: Usada para enfatizar o texto, geralmente exibido em negrito. Ao
+                contrário da tag <code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code> tem um valor semântico de
+                importância.</p>
+            <pre><code>&lt;strong&gt;Texto em negrito&lt;/strong&gt;</code></pre>
+
+            <button class="btn btn-back-to-top" onclick="window.scrollTo(0, 0);">Voltar ao topo</button>
+        </section>
+
+        <!-- Aula 2 -->
+        <section id="aula2" class="section">
+            <h2>Aula 2: Listas e Links</h2>
+            <p><strong>&lt;ol&gt;</strong>: Cria uma lista ordenada, ou seja, uma lista onde os itens são numerados.</p>
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;Primeiro item&lt;/li&gt;
+  &lt;li&gt;Segundo item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <p><strong>&lt;ul&gt;</strong>: Cria uma lista não ordenada, onde os itens são precedidos por marcadores
+                (pontos).</p>
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <p><strong>&lt;li&gt;</strong>: Define um item dentro de uma lista, seja ela ordenada
+                (<code>&lt;ol&gt;</code>) ou não ordenada (<code>&lt;ul&gt;</code>).</p>
+            <pre><code>&lt;li&gt;Este é um item&lt;/li&gt;</code></pre>
+
+            <p><strong>&lt;a&gt;</strong>: A tag de link, usada para criar links que direcionam o usuário a outra página
+                ou recurso na web.</p>
+            <pre><code>&lt;a href="https://www.exemplo.com"&gt;Visite o site&lt;/a&gt;</code></pre>
+
+            <p><strong>&lt;hr&gt;</strong>: Cria uma linha horizontal para separar seções do conteúdo. Normalmente usado
+                para dividir conteúdo de forma visual.</p>
+            <pre><code>&lt;hr&gt;</code></pre>
+
+            <button class="btn btn-back-to-top" onclick="window.scrollTo(0, 0);">Voltar ao topo</button>
+        </section>
+
+        <!-- Aula 3 -->
+        <section id="aula3" class="section">
+            <h2>Aula 3: Tags Matemáticas e de Referência</h2>
+            <p><strong>&lt;sub&gt;</strong>: A tag <code>&lt;sub&gt;</code> coloca o texto em um formato de subscrito,
+                geralmente usado para notações científicas ou fórmulas químicas.</p>
+            <pre><code>&lt;sub&gt;Texto subscrito&lt;/sub&gt;</code></pre>
+
+            <p><strong>&lt;sup&gt;</strong>: A tag <code>&lt;sup&gt;</code> coloca o texto em um formato de sobrescrito,
+                geralmente usado para exponentes ou notações matemáticas.</p>
+            <pre><code>&lt;sup&gt;Texto sobrescrito&lt;/sup&gt;</code></pre>
+
+            <p><strong>&lt;blockquote&gt;</strong>: A tag <code>&lt;blockquote&gt;</code> é usada para indicar citações
+                longas, geralmente com um recuo na margem.</p>
+            <pre><code>&lt;blockquote&gt;Esta é uma citação longa&lt;/blockquote&gt;</code></pre>
+
+            <p><strong>&lt;br&gt;</strong>: A tag <code>&lt;br&gt;</code> é usada para quebrar uma linha dentro de um
+                parágrafo ou outro elemento de bloco.</p>
+            <pre><code>Texto linha 1&lt;br&gt;Texto linha 2</code></pre>
+
+            <button class="btn btn-back-to-top" onclick="window.scrollTo(0, 0);">Voltar ao topo</button>
+        </section>
+
+        <!-- Aula 4 -->
+        <section id="aula4" class="section">
+            <h2>Aula 4: Tags de Estilo e Formatação Adicional</h2>
+            <p><strong>&lt;font&gt;</strong>: A tag <code>&lt;font&gt;</code> era usada para alterar o estilo da fonte
+                (como cor, tamanho e tipo), mas foi descontinuada e não é mais recomendada para uso.</p>
+            <pre><code>&lt;font color="red"&gt;Texto em vermelho&lt;/font&gt;</code></pre>
+
+            <p><strong>&lt;del&gt;</strong>: A tag <code>&lt;del&gt;</code> é usada para marcar um texto que foi
+                deletado. Normalmente é exibido com uma linha sobre o texto.</p>
+            <pre><code>&lt;del&gt;Texto deletado&lt;/del&gt;</code></pre>
+
+            <p><strong>&lt;abbr&gt;</strong>: A tag <code>&lt;abbr&gt;</code> é usada para abreviar uma palavra ou
+                expressão e deve conter o atributo <code>title</code> com a forma completa.</p>
+            <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+
+            <button class="btn btn-back-to-top" onclick="window.scrollTo(0, 0);">Voltar ao topo</button>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Bootcamp DIO | Santander 2025 - By Jeferson Cardoso</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
