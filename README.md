@@ -64,4 +64,20 @@ Para rodar este projeto em seu computador, siga os passos abaixo:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/curso-html-bootcamp-santander.git
+   git clone https://github.com/zeca-cardoso-python/curso-html-dio.git
+
+2. **Entre no projeto**:
+   cd curso-html-dio e abra o arquivo index.html
+
+3. Tecnologias Utilizadas
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+HTML5: Linguagem de marcação usada para estruturar o conteúdo.
+
+CSS3: Estilização da página para melhorar a aparência e responsividade.
+
+JavaScript: Para a funcionalidade de rolar para o topo da página e interatividade.
+
+Bootstrap 5: Framework CSS para facilitar a criação de layouts responsivos e modernos.
+
+   
